@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { View, Text } from "react-native";
+import React, { useEffect, useState } from "react";
+import { View, Text, Button } from "react-native";
 import { ActivityIndicator, StyleSheet } from "react-native";
 import Login from "./login";
 import Signup from "./signup";
@@ -10,7 +10,7 @@ export default function Auth() {
   
   return (
     <View style={styles.screen}>
-      {state ? <Login handleState /> : <Signup handleState />}
+      {state ? <Login handleState={ () => handleState() } /> : <Signup handleState={ () => handleState() } />}
     </View>
   );
 }

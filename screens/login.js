@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import { View, Text } from "react-native";
+import { View, Text, Button } from "react-native";
 import { ActivityIndicator, StyleSheet } from "react-native";
 
 export default function Login({ handleState }) {
   return (
     <View style={styles.screen}>
-      <Button title="Create an account" onPress={handleState} />
+      <Button title="Create an account" onPress={ () => {handleState()} } />
     </View>
   );
 }
