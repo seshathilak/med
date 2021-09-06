@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { useSelector } from 'react-redux';
 import { HomeTabsStackScreens } from "./Navigation";
 import StartupScreen from "../screens/StartupScreen";
-import AuthScreen from "../screens/auth";
+import AuthScreen from "../screens/authScreens/auth";
 
 const RootNavigation = () => {
 
