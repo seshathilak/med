@@ -86,6 +86,10 @@ export const SubTitle = styled.Text`
   `}
 `;
 
+export const Commented = styled.Text`
+
+`;
+
 export const StyledTextInput = styled.TextInput`
   background-color: ${secondary};
   padding: 15px;
